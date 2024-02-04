@@ -3,6 +3,7 @@
 import { title } from "@/components/primitives";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { AnandPIC } from "@/components/aboutPicture";
+import { AboutDescription } from "@/components/aboutDescription";
 
 export default function AboutPage() {
 	return (
@@ -18,7 +19,7 @@ export default function AboutPage() {
 						<AnandPIC />
 					</div>
 					<div className="flex-grow">
-						<p>hello</p>
+						<AboutDescription />
 					</div>
 					</div>
 
