@@ -83,29 +83,27 @@ export const WavyBackground = ({
     }
   };
 
-
-  const animationId = useRef<number | null>(null);
+  let animationId: number;
+  
   const render = () => {
     ctx.fillStyle = backgroundFill || "black";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
-    animationId.current = requestAnimationFrame(render);
+    animationId = requestAnimationFrame(render);
   };
 
   useEffect(() => {
     init();
     return () => {
-      if (animationId.current) {
-        cancelAnimationFrame(animationId.current)
-    }
+      cancelAnimationFrame(animationId);
     };
   }, [init]);
 
   return (
     <div
       className={cn(
-        "h-screen flex flex-col ",
+        "h-screen flex flex-col items-center justify-center",
         containerClassName
       )}
     >
