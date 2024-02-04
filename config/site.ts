@@ -1,63 +1,43 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "Anankumar NS",
+	description: "I am a passionate developer who loves to code and build things that matter.",
 	navItems: [
 		{
 			label: "Home",
 			href: "/",
 		},
     {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
       label: "About",
       href: "/about",
+    },
+    {
+      label: "Projects",
+      href: "/projects",
+    },
+    {
+      label: "Contact Me",
+      href: "/contact",
     }
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Home",
+			href: "/",
 		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
+    {
+      label: "About",
+      href: "/about",
+    },
+    {
+      label: "Projects",
+      href: "/projects",
+    },
+    {
+      label: "Contact Me",
+      href: "/contact",
+    }
 	],
 	links: {
 		github: "https://github.com/nextui-org/nextui",
